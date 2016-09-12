@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30095e6b-00d6-4f4b-bf38-02cae31b12d6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/happy-common-basic/happy-common-basic.iml" afterPath="$PROJECT_DIR$/happy-common-basic/happy-common-basic.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/happy-common-basic/pom.xml" afterPath="$PROJECT_DIR$/happy-common-basic/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/happy-common-basic/src/main/java/com/happy/common/util/memcache/CacheUtil.java" afterPath="$PROJECT_DIR$/happy-common-basic/src/main/java/com/happy/common/util/memcache/CacheUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/happy-common-basic/src/test/resources/configCenter/happy_configCenter.properties" afterPath="$PROJECT_DIR$/happy-common-basic/src/test/resources/configCenter/happy_configCenter.properties" />
     </list>
     <ignored path="HappyWork.iws" />
@@ -127,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/happy-common-basic/src/test/resources/configCenter/happy_configCenter.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -974,7 +970,7 @@
       <updated>1473590005819</updated>
       <workItem from="1473590007778" duration="22873000" />
       <workItem from="1473663614586" duration="5573000" />
-      <workItem from="1473669436598" duration="1469000" />
+      <workItem from="1473669436598" duration="1568000" />
     </task>
     <task id="LOCAL-00001" summary="Memcache缓存Util, 未完待续.....">
       <created>1473614315345</created>
@@ -998,7 +994,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29915000" />
+    <option name="totallyTimeSpent" value="30014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-227" y="-1057" width="1920" height="1057" extended-state="6" />
@@ -1514,7 +1510,7 @@
     <entry file="file://$PROJECT_DIR$/happy-common-basic/src/test/resources/configCenter/happy_configCenter.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
           <folding />
         </state>
       </provider>
