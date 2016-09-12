@@ -1,0 +1,194 @@
+
+############################################################
+### Java ###
+*.class
+classes/
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+############################################################
+### Eclipse ###
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.project
+.classpath
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin 
+.target
+
+# TeXlipse plugin
+.texlipse
+
+
+############################################################
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+
+############################################################
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+############################################################
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+
+############################################################
+### Linux ###
+*~
+
+# KDE directory preferences
+.directory
+
+
+############################################################
+*.log
+log.txt
+
+############################################################
+*.iml
+.idea/
+MANIFEST.MF
+doc/api_data.js
+doc/api_data.json
+doc/api_project.js
+doc/api_project.json
+doc/index.html
+doc/main.js
+doc/css/style.css
+doc/img/favicon.ico
+doc/img/glyphicons-halflings-white.png
+doc/img/glyphicons-halflings.png
+doc/locales/ca.js
+doc/locales/de.js
+doc/locales/es.js
+doc/locales/fr.js
+doc/locales/locale.js
+doc/locales/nl.js
+doc/locales/pl.js
+doc/locales/pt_br.js
+doc/locales/ru.js
+doc/locales/zh.js
+doc/locales/zh_cn.js
+doc/utils/handlebars_helper.js
+doc/utils/send_sample_request.js
+doc/vendor/bootstrap-responsive.min.css
+doc/vendor/bootstrap.min.css
+doc/vendor/bootstrap.min.js
+doc/vendor/diff_match_patch.min.js
+doc/vendor/handlebars.min.js
+doc/vendor/jquery.min.js
+doc/vendor/lodash.min.js
+doc/vendor/polyfill.js
+doc/vendor/prettify.css
+doc/vendor/require.min.js
+doc/vendor/semver.min.js
+doc/vendor/webfontloader.js
+doc/vendor/path-to-regexp/index.js
+doc/vendor/path-to-regexp/LICENSE
+doc/vendor/prettify/lang-apollo.js
+doc/vendor/prettify/lang-basic.js
+doc/vendor/prettify/lang-clj.js
+doc/vendor/prettify/lang-css.js
+doc/vendor/prettify/lang-dart.js
+doc/vendor/prettify/lang-erlang.js
+doc/vendor/prettify/lang-go.js
+doc/vendor/prettify/lang-hs.js
+doc/vendor/prettify/lang-lisp.js
+doc/vendor/prettify/lang-llvm.js
+doc/vendor/prettify/lang-lua.js
+doc/vendor/prettify/lang-matlab.js
+doc/vendor/prettify/lang-ml.js
+doc/vendor/prettify/lang-mumps.js
+doc/vendor/prettify/lang-n.js
+doc/vendor/prettify/lang-pascal.js
+doc/vendor/prettify/lang-proto.js
+doc/vendor/prettify/lang-r.js
+doc/vendor/prettify/lang-rd.js
+doc/vendor/prettify/lang-scala.js
+doc/vendor/prettify/lang-sql.js
+doc/vendor/prettify/lang-tcl.js
+doc/vendor/prettify/lang-tex.js
+doc/vendor/prettify/lang-vb.js
+doc/vendor/prettify/lang-vhdl.js
+doc/vendor/prettify/lang-wiki.js
+doc/vendor/prettify/lang-xq.js
+doc/vendor/prettify/lang-yaml.js
+doc/vendor/prettify/prettify.css
+doc/vendor/prettify/prettify.js
+doc/vendor/prettify/run_prettify.js
