@@ -4,6 +4,10 @@ import com.happy.common.util.config.ConfigCenter;
 import com.sun.deploy.cache.Cache;
 import org.apache.commons.lang.StringUtils;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 缓存操作工具类
  *
@@ -63,11 +67,18 @@ public class CacheUtil {
         if(isInit){
             return true;
         }
-        // TODO Derek 未完
-        return false;
+        try{
+            for(int i=0;i<namespaceArray.length;i++){
+                init(namespaceArray[i]);
+            }
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        isInit = true;
+        return true;
     }
 
-    private static void init(int namespace){
+    private static void init(int namespace) throws IOException {
         String strNamespace = getNameSpaceStr(namespace);
         final String hostConf = ConfigCenter.getInstance().getValue("happy.cache." + strNamespace, "server");
         final String portConf = ConfigCenter.getInstance().getValueWithDefault("happy.cache." + strNamespace, "port", "12121");
@@ -92,7 +103,26 @@ public class CacheUtil {
             }
         }
 
-        //TODO Derek 未完。。。。。
+        List<SpyMemcacheServer> servers = new ArrayList<SpyMemcacheServer>();
+        for(int i=0;i<serverArray.length;i++){
+            SpyMemcacheServer server = new SpyMemcacheServer();
+            server.setIp(serverArray[i][0]);
+            server.setPort(Integer.parseInt(serverArray[i][1]));
+            server.setUsername(ConfigCenter.getInstance().getValueWithDefault("happy.cache." + strNamespace ,"username",""));
+            server.setPassword(ConfigCenter.getInstance().getValueWithDefault("happy.cache." + strNamespace, "password", ""));
+            servers.add(server);
+        }
+
+        if(CacheNamespaceEnum.COMMON.equals(namespace)){
+            manager_common = new SpyMemcacheManager(servers);
+            manager_common.connect();
+        }else if(CacheNamespaceEnum.USER.equals(namespace)){
+            manager_user = new SpyMemcacheManager(servers);
+            manager_user.connect();
+        }else if(CacheNamespaceEnum.OTHER.equals(namespace)){
+            manager_other = new SpyMemcacheManager(servers);
+            manager_other.connect();
+        }
 
     }
 
