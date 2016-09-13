@@ -14,8 +14,7 @@ public class HttpClientUtil {
 
     private static final HttpRequestProxy httpRequestProxy = new HttpRequestProxy();
 
-    private HttpClient() {
-
+    private HttpClientUtil() {
     }
 
     /**
@@ -60,18 +59,20 @@ public class HttpClientUtil {
 
     /**
      * 发送POST请求
+     * 
      * @param url 请求url
      * @param postData 请求数据BODY
      * @param headerMap 自定义头信息
      * @return com.happy.common.util.http.HttpResult 请求结果,相应内容
      * @since v1.0.0
+     * 
      * <PRE>
      * @author Derek.Wu
      * @Date 2016-09-13
      * </PRE>
      */
-    public static HttpResult doPostRequest(String url, Map<String, Object> postData, Map<String, String > headerMap){
-        return httpRequestProxy.doPostRequest(url,postData,headerMap);
+    public static HttpResult doPostRequest(String url, Map<String, Object> postData, Map<String, String> headerMap) {
+        return httpRequestProxy.doPostRequest(url, postData, headerMap);
     }
 
 }

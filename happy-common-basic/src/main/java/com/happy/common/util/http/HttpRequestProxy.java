@@ -443,7 +443,6 @@ public class HttpRequestProxy {
         int sep_idx = value.indexOf(";");
         if (sep_idx == -1) {
             return existValue;
-            ;
         }
         String[] subValues = value.split(";");
         if (StringUtils.isBlank(subValues[0]) || "null".equals(StringUtils.trim(subValues[0]))) {
@@ -500,7 +499,6 @@ public class HttpRequestProxy {
         } else {
             return SerializableTool.serialize(value);
         }
-
     }
 
 }
