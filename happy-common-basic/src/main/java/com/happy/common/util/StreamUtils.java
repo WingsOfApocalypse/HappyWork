@@ -11,8 +11,20 @@ import java.io.OutputStream;
  */
 public class StreamUtils {
 
-    public static void closeStream(Closeable stream){
-        if(stream!=null){
+    /**
+     * 关闭流
+     *
+     * @param stream
+     * @return void
+     * @since v1.0.0
+     * 
+     * <PRE>
+     * @author Derek.Wu
+     * @Date 2016-09-12
+     * </PRE>
+     */
+    public static void closeStream(Closeable stream) {
+        if (stream != null) {
             try {
                 stream.close();
             } catch (IOException e) {
@@ -21,8 +33,20 @@ public class StreamUtils {
         }
     }
 
-    public static void closeStream(OutputStream stream){
-        if(stream!=null){
+    /**
+     * 关闭流
+     * 
+     * @param stream
+     * @return void
+     * @since v1.0.0
+     * 
+     * <PRE>
+     * @author Derek.Wu 
+     * @Date 2016-09-12
+     * </PRE>
+     */
+    public static void closeStream(OutputStream stream) {
+        if (stream != null) {
             try {
                 stream.close();
             } catch (IOException e) {

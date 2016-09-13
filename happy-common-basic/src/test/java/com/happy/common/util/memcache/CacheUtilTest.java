@@ -14,6 +14,7 @@ public class CacheUtilTest {
         CacheUtil.checkConfigAndInit(new int[]{CacheNamespaceEnum.COMMON.getType()});
     }
 
+
     @Test
     public void test(){
         CacheUtil.put(CacheNamespaceEnum.COMMON.getType(), "key_derek", "WQ", CacheConstants.EXPIRED_60_60);
