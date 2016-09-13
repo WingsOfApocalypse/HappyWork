@@ -40,10 +40,12 @@ public abstract class AbstractErrorDomain implements ErrorDomain {
         validateRange(getCodeRange(), getParentDomain());
     }
 
+    @Override
     public String getDomain() {
         return domain;
     }
 
+    @Override
     public Range<Integer> getCodeRange() {
         return codeRange;
     }
