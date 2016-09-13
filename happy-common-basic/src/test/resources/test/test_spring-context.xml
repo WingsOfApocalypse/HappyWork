@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="byName"
+       xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+    <context:property-placeholder location="classpath*:test/test_*.properties"/>
+    <context:annotation-config/>
+
+    <!-- 启动对@AspectJ注解的支持 -->
+    <aop:aspectj-autoproxy proxy-target-class="false"/>
+
+    <context:component-scan
+            base-package="com.*">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <import resource="classpath:test/test_spring-datasource-redis.xml"/>
+
+    <!--
+    <import resource="classpath*:test/test_spring-jms.xml" />
+     -->
+</beans>

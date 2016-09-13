@@ -2,10 +2,12 @@ package com.happy.common.util.memcache;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.springframework.test.context.ContextConfiguration;
 
 /**
  * Created by Derek on 16/9/12.
  */
+@ContextConfiguration(locations = { "classpath*:test/test_spring-context.xml" })
 public class CacheUtilTest {
 
     @BeforeClass

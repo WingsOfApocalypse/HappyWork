@@ -4,6 +4,7 @@ import java.lang.reflect.Field;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.stereotype.Component;
 
 import com.happy.common.util.redis.AbstractRedisOperation;
 import com.happy.common.util.redis.constant.RedisDBEnum;
@@ -16,6 +17,7 @@ import com.happy.common.util.redis.exception.RedisOperateException;
  * @Author ApocalypseZhang
  * @Date 2016年09月13日
  */
+@Component
 public class RedisDBIndexProcessor implements BeanPostProcessor {
 
     public Object postProcessBeforeInitialization(Object bean, String s) throws BeansException {
@@ -39,6 +41,7 @@ public class RedisDBIndexProcessor implements BeanPostProcessor {
         }
         return bean;
     }
+
 
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         return bean;
